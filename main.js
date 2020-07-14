@@ -20,9 +20,8 @@ var server = http.createServer(expressApp);
 var RED = require('node-red');
 var { app, BrowserWindow, shell, Menu } = require('electron');
 
-var port = 1880;
 var settings = {
-    uiPort: port,
+    uiPort: 1880,
     httpAdminRoot: '/red',
     httpNodeRoot: '/',
     editorTheme: { projects: { enabled: true } }
@@ -74,7 +73,7 @@ if (!app.requestSingleInstanceLock()) {
     RED.init(server, settings);
     expressApp.use(settings.httpAdminRoot, RED.httpAdmin);
     expressApp.use(settings.httpNodeRoot, RED.httpNode);
-    server.listen(port);
+    server.listen(settings.uiPort);
     RED.start().then(function () {
         app.whenReady().then(createWindow);
     });
