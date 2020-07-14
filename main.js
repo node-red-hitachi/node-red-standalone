@@ -60,7 +60,7 @@ var createWindow = function () {
         win.webContents.insertCSS('#red-ui-header { -webkit-app-region: drag; }');
         win.webContents.insertCSS('#red-ui-header > ul { -webkit-app-region: no-drag; }');
     });
-    win.loadURL('http://localhost:' + port + settings.httpAdminRoot);
+    win.loadURL('http://localhost:' + settings.uiPort + settings.httpAdminRoot);
     app.on('second-instance', function () {
         if (win.isMinimized()) { win.restore(); }
         win.focus();
