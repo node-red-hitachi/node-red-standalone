@@ -6,7 +6,7 @@
     "appId": "com.electron.node-red",
     "productName": "Node-RED",
     "win": {
-      "target": [{ "target": "msi", "arch": [ "x64" ] }]
+      "target": [{ "target": "msi", "arch": [ "ia32" ] }]
     },
     "mac": {
       "category": "public.app-category.developer-tools",
