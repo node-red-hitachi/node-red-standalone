@@ -22,6 +22,7 @@ var { app, BrowserWindow, shell, Menu } = require('electron');
 
 var port = 1880;
 var settings = {
+    uiPort: port,
     httpAdminRoot: '/red',
     httpNodeRoot: '/',
     editorTheme: { projects: { enabled: true } }
