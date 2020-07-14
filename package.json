@@ -1,0 +1,64 @@
+{
+  "name": "node-red-standalone",
+  "version": "0.0.1",
+  "main": "main.js",
+  "build": {
+    "appId": "com.electron.node-red",
+    "productName": "Node-RED",
+    "win": {
+      "target": [
+        {
+          "target": "msi"
+        }
+      ]
+    },
+    "mac": {
+      "category": "public.app-category.developer-tools"
+    },
+    "linux": {
+      "category": "Development",
+      "target": [
+        {
+          "target": "deb",
+          "arch": [
+            "x64",
+            "armv7l"
+          ]
+        },
+        {
+          "target": "rpm",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "publish": []
+    }
+  },
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "dependencies": {
+    "node-red": "1.0.6",
+    "node-red-dashboard": "^2.23.0"
+  },
+  "devDependencies": {
+    "electron": "^9.1.0",
+    "electron-builder": "^22.7.0"
+  },
+  "description": "Standalone Node-RED",
+  "keywords": [
+    "node-red",
+    "standalone",
+    "electron"
+  ],
+  "license": "Apache-2.0",
+  "homepage": "https://nodered.org",
+  "contributor": [
+    "Kazuhito Yokoi",
+    "Dave Conway-Jones",
+    "Nick O'Leary"
+  ],
+  "author": "Node-RED <team@nodered.org>"
+}
