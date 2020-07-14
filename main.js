@@ -21,7 +21,7 @@ var RED = require('node-red');
 var { app, BrowserWindow, shell, Menu } = require('electron');
 
 var settings = {
-    uiPort: process.env.PORT || 1880,
+    uiPort: 1880,
     httpAdminRoot: '/red',
     httpNodeRoot: '/',
     editorTheme: { projects: { enabled: true } }
