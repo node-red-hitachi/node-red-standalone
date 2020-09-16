@@ -8,7 +8,7 @@ addons:
       - rpm
 language: node_js
 node_js:
- - 12
+ - 14
 script:
  - npm install
  - travis_retry npm run build
