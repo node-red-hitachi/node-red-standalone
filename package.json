@@ -8,8 +8,8 @@
     "files": [
       "**/*",
       {
-        "from": "node_modules",
-        "to": "node_modules"
+        "from": "node_modules/@node-red",
+        "to": "node_modules/@node-red"
       }
     ],
     "win": {
