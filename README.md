@@ -1,3 +1,5 @@
+*This repository was moved to https://github.com/node-red-hitachi/node-red-desktop*
+
 # node-red-desktop
 The Node-RED desktop is a desktop application which includes Node-RED, Node.js, nodes, and Chromium browser engine.
 
